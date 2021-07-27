@@ -5,6 +5,10 @@ Next topic: [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.h
 
 ## Finished Topics
 
+### Main Concepts
+
+- [ ] [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
+
 ## References
 
 1. https://reactjs.org/
