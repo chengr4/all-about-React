@@ -17,3 +17,4 @@ Next topic: [Handling Events](https://reactjs.org/docs/handling-events.html)
 ## References
 
 1. https://reactjs.org/
+2. https://chengr4.medium.com/react-%E7%AD%86%E8%A8%98-8b8a39e86655
