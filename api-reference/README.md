@@ -1,4 +1,4 @@
-# Note
+# Notes
 
 [The Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
