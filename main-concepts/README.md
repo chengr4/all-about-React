@@ -1,4 +1,4 @@
-# Note
+# Notes
 
 ## State and Lifecycle
 
