@@ -20,3 +20,8 @@ Typically, in React constructors are only used for two purposes:
 > If you need to load data from a remote endpoint, this is a good place to instantiate the network request.
 
 + This method is a good place to set up any subscriptions. If you do that, don’t forget to unsubscribe in `componentWillUnmount()`.
+
+## Other APIs
+
+### `setState()`
+
