@@ -7,7 +7,7 @@ React notes
 ### Main Concepts
 
 - [x] [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
-- [ ] [Handling Events](https://reactjs.org/docs/handling-events.html)
+- [x] [Handling Events](https://reactjs.org/docs/handling-events.html)
 - [ ] [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
 
 ### API Reference
