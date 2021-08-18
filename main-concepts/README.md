@@ -81,3 +81,92 @@ constructor(props) {
 1. [SyntheticEvent](https://reactjs.org/docs/events.html)
 2. [Ben Howdle; Understanding JavaScript bind() (2014.1)](https://www.smashingmagazine.com/2014/01/understanding-javascript-function-prototype-bind/)
 
+## Lists and Keys
+
+Usually, we need a "key" when creating lists of elements.
+
+### Keys
+
+Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside the array to give the elements a stable identity.
+
+**Attibutes**
+
+1. string
+2. unique
+3. Use item index, only if items have no stable IDs
+  ```javascript
+  const todoItems = todos.map((todo, index) =>
+    // Only do this if items have no stable IDs
+    <li key={index}>
+      {todo.text}
+    </li>
+  );
+  ```
+4. Keys serve as a hint to React but they **don’t** get passed to your components.  
+ 
+### Wrong and correct way to extract Components with Keys
+
+Wrong:
+
+```javascript
+function ListItem(props) {
+  const value = props.value;
+  return (
+    // Wrong! There is no need to specify the key here:
+    <li key={value.toString()}>
+      {value}
+    </li>
+  );
+}
+
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    // Wrong! The key should have been specified here:
+    <ListItem value={number} />
+  );
+  return (
+    <ul>
+      {listItems}
+    </ul>
+  );
+}
+
+const numbers = [1, 2, 3, 4, 5];
+ReactDOM.render(
+  <NumberList numbers={numbers} />,
+  document.getElementById('root')
+);
+```
+ 
+Correct:
+
+```javascript
+function ListItem(props) {
+  // Correct! There is no need to specify the key here:
+  return <li>{props.value}</li>;
+}
+
+function NumberList(props) {
+  const numbers = props.numbers;
+  const listItems = numbers.map((number) =>
+    // Correct! Key should be specified inside the array.
+    <ListItem key={number.toString()} value={number} />
+  );
+  return (
+    <ul>
+      {listItems}
+    </ul>
+  );
+}
+
+const numbers = [1, 2, 3, 4, 5];
+ReactDOM.render(
+  <NumberList numbers={numbers} />,
+  document.getElementById('root')
+);
+```
+ 
+### Related Topics
+
+1. [in-depth explanation about why keys are necessary](https://reactjs.org/docs/reconciliation.html#recursing-on-children)
