@@ -4,7 +4,7 @@
 
 `lifecycle methods`:
 
-+ `componentDidMount()`: runs after the component output has been rendered to the DOM.
++ `componentDidMount()`: Run after the component output has been rendered to the DOM.
 
 ### Notice
 
