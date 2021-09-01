@@ -10,7 +10,7 @@ React notes
 - [x] [Handling Events](https://reactjs.org/docs/handling-events.html)
 - [x] [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
 - [x] [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
-- [ ] [Forms](https://reactjs.org/docs/forms.html)
+- [x] [Forms](https://reactjs.org/docs/forms.html)
 - [ ] [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
 
 
