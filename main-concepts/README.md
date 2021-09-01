@@ -94,14 +94,14 @@ Keys help React identify which items have changed, are added, or are removed. Ke
 1. string
 2. unique
 3. Use item index, only if items have no stable IDs
-  ```javascript
-  const todoItems = todos.map((todo, index) =>
-    // Only do this if items have no stable IDs
-    <li key={index}>
-      {todo.text}
-    </li>
-  );
-  ```
+   ```javascript
+   const todoItems = todos.map((todo, index) =>
+     // Only do this if items have no stable IDs
+     <li key={index}>
+       {todo.text}
+     </li>
+   );
+   ```
 4. Keys serve as a hint to React but they **don’t** get passed to your components.  
  
 ### Wrong and correct way to extract Components with Keys
