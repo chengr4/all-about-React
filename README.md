@@ -9,7 +9,10 @@ React notes
 - [x] [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [x] [Handling Events](https://reactjs.org/docs/handling-events.html)
 - [x] [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
-- [ ] [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+- [x] [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+- [ ] [Forms](https://reactjs.org/docs/forms.html)
+- [ ] [Lifting State Up](https://reactjs.org/docs/lifting-state-up.html)
+
 
 ### API Reference
 
