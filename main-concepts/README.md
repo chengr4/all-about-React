@@ -274,3 +274,6 @@ check out `uncontrolled components` [2]
 1. [ES6 computed property name syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#computed_property_names)
 2. [uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html)
 3. [Formik](https://formik.org/)
+
+## Lifting State Up
+
