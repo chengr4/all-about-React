@@ -278,3 +278,7 @@ check out `uncontrolled components` [2]
 ## Lifting State Up
 
 > Often, several components need to reflect the same changing data. We recommend lifting the shared state up to their closest common ancestor
+
+### Related Topics
+
+1. [Lifting State Up React.js - Part 14 (2018.9)](https://youtu.be/ZluNj0-NpNI)
