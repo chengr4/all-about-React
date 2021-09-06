@@ -281,4 +281,4 @@ check out `uncontrolled components` [2]
 
 ### Related Topics
 
-1. [Lifting State Up React.js - Part 14 (2018.9)](https://youtu.be/ZluNj0-NpNI)
+1. [Bed Awad; Lifting State Up React.js - Part 14 (2018.9)](https://youtu.be/ZluNj0-NpNI)
