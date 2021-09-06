@@ -2,6 +2,15 @@
 
 React notes
 
+## Q and A
+
+### Q: What causes the component re-render?
+
+A:
+
+1. The `state` changes
+2. There comes new `props` [3]
+
 ## Finished Topics
 
 ### Main Concepts
@@ -28,3 +37,4 @@ React notes
 1. https://reactjs.org/
 2. https://chengr4.medium.com/react-%E7%AD%86%E8%A8%98-8b8a39e86655
 3. [Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
+4. https://github.com/uberVU/react-guide/issues/17#issuecomment-305106051
