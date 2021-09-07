@@ -26,7 +26,7 @@ A:
 
 ## Advanced Guides
 
-- [ ] [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+- [x] [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 
 ### API Reference
 
