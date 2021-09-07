@@ -1,4 +1,4 @@
-# all-about-React
+# All about React
 
 React notes
 
