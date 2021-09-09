@@ -9,7 +9,7 @@ React notes
 A:
 
 1. The `state` changes
-2. There comes new `props` [3]
+2. There comes new `props` [4]
 
 ## Finished Topics
 
