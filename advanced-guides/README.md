@@ -1,6 +1,24 @@
 # Advanced Guides
 # Notes
 
+## JSX In Depth
+
+### Spread Attributes
+
+If `props` is an object, use “spread” operator (`...`) to pass the whole `props` object.
+
+```javascript
+// Component App1 == Component App2
+function App1() {
+  return <Greeting firstName="Ben" lastName="Hector" />;
+}
+
+function App2() {
+  const props = {firstName: 'Ben', lastName: 'Hector'};
+  return <Greeting {...props} />;
+}
+```
+
 ## Typechecking With PropTypes
 
 > Note:  
