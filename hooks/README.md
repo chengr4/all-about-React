@@ -5,7 +5,7 @@
 1. `useRef` is like a “box” that can hold a mutable value in its `.current` property.
 2. `useRef` does not cause the component to re-render when it gets changed (vs. `useState`)
 
-### A Common use case: Click the button to focus <input>
+### A Common use case: Click the button to focus `input` tag
 
 ```javascript
 function TextInputWithFocusButton() {
