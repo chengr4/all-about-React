@@ -15,11 +15,11 @@ function App() {
   // return <DebounceComponent />
   // return <UpdateEffectComponent />
   // return <ArrayComponent />
-  // return <PreviousComponent />
+  return <PreviousComponent />
   // return <StateWithHistoryComponent />
   // return <StorageComponent />
   // return <AsyncComponent />
-  return <FetchComponent />
+  // return <FetchComponent />
 }
 
 export default App
