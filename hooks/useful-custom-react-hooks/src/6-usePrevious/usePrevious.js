@@ -1,5 +1,10 @@
 import { useRef } from "react"
 
+/**
+ * Stores previous value
+ * @param {*} value 
+ * @returns 
+ */
 export default function usePrevious(value) {
   const currentRef = useRef(value)
   const previousRef = useRef()

@@ -4,6 +4,8 @@ import usePrevious from "./usePrevious"
 export default function PreviousComponent() {
   const [count, setCount] = useState(0)
   const [name, setName] = useState("Kyle")
+
+  // save the previous of our account variable
   const previousCount = usePrevious(count)
 
   return (
