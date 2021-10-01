@@ -100,6 +100,8 @@ When Webpack comes across this syntax, it **automatically** starts code-splittin
 
 ### React.lazy
 
+> [I think this feature can only be used after React v16.6](https://reactjs.org/blog/2018/10/23/react-v-16-6.html)
+
 ```javascript
 import React, { Suspense } from 'react';
 
