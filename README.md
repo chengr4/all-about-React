@@ -1,16 +1,5 @@
 # All about React
 
-React notes
-
-## Q and A
-
-### Q: What causes the component re-render?
-
-A:
-
-1. The `state` changes
-2. There comes new `props` [4]
-
 ## Finished Topics
 
 ### Main Concepts
@@ -24,7 +13,7 @@ A:
 - [ ] [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
 - [ ] [Thinking in React](https://reactjs.org/docs/thinking-in-react.html)
 
-## Advanced Guides
+### Advanced Guides
 
 - [x] [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - [ ] [JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
@@ -37,6 +26,15 @@ A:
 ### Hooks
 
 - [ ] [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
+
+## Q and A
+
+### Q: What causes the component re-render?
+
+A:
+
+1. The `state` changes
+2. There comes new `props` [4]
 
 ## References
 
