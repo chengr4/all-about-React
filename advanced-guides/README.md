@@ -85,3 +85,43 @@ export default HelloWorldComponent
       document.getElementById('example')
     );
     ```
+
+## Code-Splitting
+
+### Dynamic import
+
+```javascript
+import("./math").then(math => {
+  console.log(math.add(16, 26));
+});
+```
+
+When Webpack comes across this syntax, it **automatically** starts code-splitting your app. If you’re using `Create React App`, this is already configured for you.
+
+### React.lazy
+
+```javascript
+import React, { Suspense } from 'react';
+
+const OtherComponent = React.lazy(() => import('./OtherComponent'));
+
+function MyComponent() {
+  // The lazy component should then be rendered inside a Suspense component
+  return (
+    <div>
+      <Suspense fallback={<div>Loading...</div>}> 
+        <OtherComponent />
+      </Suspense>
+    </div>
+  );
+}
+```
+
+> 1. The `fallback` prop accepts any React elements that you want to render while waiting for the component to load
+> 2. Wraping multiple lazy components with a single Suspense component is possible
+
+#### Error boundaries
+
+### References
+
+1. [Code Splitting](https://create-react-app.dev/docs/code-splitting/)
