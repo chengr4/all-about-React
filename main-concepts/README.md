@@ -1,3 +1,4 @@
+# MAIN CONCEPTS
 # Notes
 
 ## State and Lifecycle
@@ -282,3 +283,65 @@ check out `uncontrolled components` [2]
 ### Related Topics
 
 1. [Bed Awad; Lifting State Up React.js - Part 14 (2018.9)](https://youtu.be/ZluNj0-NpNI)
+
+## Composition vs Inheritance
+
+### Basic Usage
+
+```javascript
+function FancyBorder(props) {
+  return (
+    <div className={'FancyBorder FancyBorder-' + props.color}>
+      {props.children}
+    </div>
+  );
+}
+
+function WelcomeDialog() {
+  return (
+    <FancyBorder color="blue">
+      {/* Here are prop.children */}
+      <h1 className="Dialog-title">
+        Welcome
+      </h1>
+      <p className="Dialog-message">
+        Thank you for visiting our spacecraft!
+      </p>
+    </FancyBorder>
+  );
+}
+```
+
+### Specialization
+
+更「特別」的 component(WelcomeDialog) 使用(render) 更多「通用」的 component(Dialog)，並使用 props 對其進行設定
+
+```javascript
+function Dialog(props) {
+  return (
+    <FancyBorder color="blue">
+      <h1 className="Dialog-title">
+        {props.title}
+      </h1>
+      <p className="Dialog-message">
+        {props.message}
+      </p>
+    </FancyBorder>
+  );
+}
+
+function WelcomeDialog() {
+  return (
+    <Dialog
+      title="Welcome"
+      message="Thank you for visiting our spacecraft!" />
+  );
+}
+```
+
+### About Inheritance
+
+1. Always use composition
+2. 有關非 UI 的功能：使用一個獨立的 JavaScript module。Component 可以 import 並使用它的 function、object 或者是 class，而不需要繼承它。
+
+
