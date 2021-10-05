@@ -1,10 +1,19 @@
+# API Reference
 # Notes
+
+## React Top-Level API
+
+### React.memo
+
+`React.memo` is a [higher order component.](https://reactjs.org/docs/higher-order-components.html)
+
+## React.Component
 
 [The Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
-## Lifecycle Methods
+### Lifecycle Methods
 
-### `constructor`
+#### `constructor`
 
 Typically, in React constructors are only used for two purposes:
 
@@ -13,7 +22,7 @@ Typically, in React constructors are only used for two purposes:
 
 > Avoid introducing any **side-effects** or **subscriptions** in the constructor. For those use cases, use `componentDidMount()` instead.
 
-### `componentDidMount()`
+#### `componentDidMount()`
 
 + Initialization that requires DOM nodes should go here
 
@@ -21,7 +30,7 @@ Typically, in React constructors are only used for two purposes:
 
 + This method is a good place to set up any subscriptions. If you do that, don’t forget to unsubscribe in `componentWillUnmount()`.
 
-## Other APIs
+### Other APIs
 
-### `setState()`
+#### `setState()`
 
