@@ -3,6 +3,7 @@
 
 + [JSX In Depth](#jsx-in-depth)
 + [Typechecking With PropTypes](#typechecking-with-proptypes)
++ [Code-Splitting](#code-splitting)
 
 ## JSX In Depth
 
@@ -67,6 +68,25 @@ export default HelloWorldComponent
 ### More than just Typechecking
 
 1. Requiring Single Child (不太確定)
+    ```javascript
+    import PropTypes from 'prop-types';
+
+    class MyComponent extends React.Component {
+      render() {
+        // This must be exactly one element or it will warn.
+        const children = this.props.children;
+        return (
+          <div>
+            {children}
+          </div>
+        );
+      }
+    }
+
+    MyComponent.propTypes = {
+      children: PropTypes.element.isRequired
+    };
+    ```
 2. Default Prop Values
     ```javascript
     class Greeting extends React.Component {
