@@ -1,6 +1,9 @@
 # Advanced Guides
 # Notes
 
++ [JSX In Depth](#jsx-in-depth)
++ [Typechecking With PropTypes](#typechecking-with-proptypes)
+
 ## JSX In Depth
 
 ### Spread Attributes
