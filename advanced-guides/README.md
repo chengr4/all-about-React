@@ -4,6 +4,7 @@
 + [JSX In Depth](#jsx-in-depth)
 + [Typechecking With PropTypes](#typechecking-with-proptypes)
 + [Code-Splitting](#code-splitting)
++ [Context](#context)
 
 ## JSX In Depth
 
@@ -150,3 +151,44 @@ function MyComponent() {
 ### References
 
 1. [Code Splitting](https://create-react-app.dev/docs/code-splitting/)
+
+## Context
+
++ Clean and easy way to share `state` between components
+
+### When to Use Context?
+
+1. Your data can be considered "global" for a tree of React components, 
+2. E.g. Current authenticated user, Theme, Preferred language etc
+
+### Basic Usage
+
+```javascript
+import React, { Component, createContext } from 'react';
+
+export const ThemeContext = createContext();
+
+class ThemeContextProvider extends Component {
+  state = {
+    isLightTheme: true,
+    light: { syntax: '#555', ui: '#ddd', bg: '#eee' },
+    dark: { syntax: '#ddd', ui: '#333', bg: '#555'}
+  }
+  toggleTheme= () => {
+    this.setState({ isLightTheme: !this.state.isLightTheme });
+  }
+  render() { 
+    return (
+      <ThemeContext.Provider value={{...this.state, toggleTheme: this.toggleTheme}}>
+        {this.props.children}
+      </ThemeContext.Provider>
+    );
+  }
+}
+ 
+export default ThemeContextProvider;
+```
+
+### References
+
+1. [The Net Ninja; React Context & Hooks Tutorial (2019.6)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI)
