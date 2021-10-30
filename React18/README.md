@@ -34,22 +34,22 @@ startTransition(() => {
 
 ## `<SuspenseList>`
 
-- Before 圖片載入慢，且不同步
+- Before: 圖片載入慢，且不同步
 - After: `revealOrder` 可以控制顯示順序
     
+```jsx
+<SuspenseList revealOrder="forwards " tail="collapsed"/> // tail: 避免多個 loading
 
-```jsx=
-<SuspenseList revealOrder="forward" />
+</SuspenseList>
 ```
 
-### Data fetching
+可自己決定圖片顯示順序甚是一起顯示
 
-- Lifecycle 一致
-- 推出不容易
-    - 還需要一段時間
+## Data fetching
+
+- 讓 Lifecycle 一致
 - 會在之後的 React 18.x 推出
 
-    
 ## Server Components
     
 - Next.js 12 有提供相關的實作
