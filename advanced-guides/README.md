@@ -126,6 +126,10 @@ When Webpack comes across this syntax, it **automatically** starts code-splittin
 
 > [I think this feature can only be used after React v16.6](https://reactjs.org/blog/2018/10/23/react-v-16-6.html)
 
+> Principle of `Suspense`:  
+> Use `Promise`  
+> Promise 是狀態機 Pending -> Fulfill or Reject  
+
 ```javascript
 import React, { Suspense } from 'react';
 
@@ -135,9 +139,11 @@ function MyComponent() {
   // The lazy component should then be rendered inside a Suspense component
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}> 
-        <OtherComponent />
+      <ErrorBoundary> // <- Rejected
+      <Suspense fallback={<div>Loading...</div>}> // <- Pending
+        <OtherComponent /> // <- Resolved
       </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }
@@ -151,6 +157,7 @@ function MyComponent() {
 ### References
 
 1. [Code Splitting](https://create-react-app.dev/docs/code-splitting/)
+2. [The Future of React: 18 and Beyond](https://hackmd.io/@JSDC-tw/2021conference/%2FbJrOFuCZQQioW7k6LarlOw#Session-1-The-Future-of-React-18-and-Beyond)
 
 ## Context
 
