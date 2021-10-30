@@ -152,6 +152,8 @@ function MyComponent() {
 > 1. The `fallback` prop accepts any React elements that you want to render while waiting for the component to load
 > 2. Wraping multiple lazy components with a single Suspense component is possible
 
+> From React 18 Suspense 可以在 SSR (Server-Side Rendering) 使用
+
 #### Error boundaries
 
 ### References
