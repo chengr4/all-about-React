@@ -1,6 +1,16 @@
 # All About Next.js 
 
-## React 沒有解決的問題
+## Considerations for using Next.js
+
+1. 有 SEO 需求
+2. 舊有的 SEO 遇到瓶頸
+3. 團隊有足夠的能量 refactor
+4. 團隊有足夠的能量維護新的 server
+5. 想要有更好的 Developer Experience
+
+## Some Issues before Next.js
+
+### React 沒有解決的問題
 
 前提緊要：
 ![](https://i.imgur.com/rA5BYdj.png)
@@ -18,12 +28,40 @@
 ![](https://i.imgur.com/Sz6HnMW.png)
 
 ### 圖片優化問題
-- 過大，浪費流量
-- 新格式 WebP + AVIF，支援性問題
-- 圖片預先載入
-- 延遲載入
-    - 不載入不在 viewport 的圖片
-    - 設定圖片的 width 與 height
+
+1. 不可能在手機上載入 2000x2000 的圖片
+2. 新格式 WebP (30% smaller than JPEG) + AVIF，支援性問題
+3. 圖片是否能預先載入
+4. 是否能延遲載入圖片
+
+### Code Splitting 
+
+![](https://i.imgur.com/BhsDE3X.png)
+
+- 只載入每個頁面需要的資源
+- 實作
+    - Webpack SplitChunkPlugin
+    - Dynamic import
+
+## How Next.js Resolve Issues?
+
+### Next.js 可以在不同的頁面混用不同的設計
+
+![](https://i.imgur.com/HkG8y17.png)
+
+### Incremental Static Regeneration
+
+![](https://i.imgur.com/rVyaQvX.png)
+
+## Some Features
+
+### File-Based Routing
+
+> vs. Code-based routing (react-router)
+
+![](https://i.imgur.com/onE7KY7.png)
+
+Advantage: 不會把 code 跟 routing 的邏輯混在一起
 
 ## References
 
