@@ -19,6 +19,7 @@
 - [ ] [JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
 - [x] [Code-Splitting](https://reactjs.org/docs/code-splitting.html)
 - [ ] [Context](https://reactjs.org/docs/context.html)
+- [ ] [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 
 ### API Reference
 
