@@ -5,6 +5,7 @@
 + [Typechecking With PropTypes](#typechecking-with-proptypes)
 + [Code-Splitting](#code-splitting)
 + [Context](#context)
++ [Refs and the DOM](#refs-and-the-dom)
 
 ## JSX In Depth
 
@@ -201,3 +202,32 @@ export default ThemeContextProvider;
 ### References
 
 1. [The Net Ninja; React Context & Hooks Tutorial (2019.6)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI)
+
+## Refs and the DOM
+
+E.g.
+
+```jsx
+// in Class Component
+class RefDemo extends Component {
+  constructor(props) {
+    super(props);
+    this.inputRef = React.createRef()
+  }
+  
+  
+  
+  render() {
+    return (
+      <div>
+        {/* ref points to the input DOM node */}
+        <input type="text" ref={this.inputRef}>
+      </div>
+    )
+  }
+}
+```
+
+### References
+
+1. [Codevolution; ReactJS Tutorial - 28 - Refs (2019.01)](https://youtu.be/FXa9mMTKOu8)
