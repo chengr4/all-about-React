@@ -174,6 +174,21 @@ ReactDOM.render(
 
 ## Forms
 
+### Controlled Components
+
+In `HTML`, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input, E.g.
+
+```HTML
+<input type="text" id="name"/>
+
+<script>
+  const inputName = document.querySelector("#name");
+  inputName.addEventListener("input", e => console.log(e.target.value));
+</script>
+```
+
+透過 input's value ，我們可以知道填入欄位的值為何。
+
 Basic Usage:
 
 ```javascript
