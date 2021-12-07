@@ -1,5 +1,22 @@
 # Notes
 
+- [x] [useState](#usestate)
+- [ ] [useRef](#useref)
+
+## useState
+
+```javascript
+const [state, setState] = useState(initialState);
+
+setState(newState); // 1. update the state 2. en-queue a re-render of the component
+```
+
+If the new `state` is computed using the previous `state`, you can pass a function to `setState` (fucntional updates) 
+
+> If your update function returns the exact same value as the current state, the subsequent rerender **will be skipped** completely
+> `initialState` can be provided a function instead
+> 如果你使用與目前 state 相同值來更新 State Hook，React 將會跳過子 component 的 render 及 effect 的執行
+
 ## useRef
 
 1. `useRef` is like a “box” that can hold a mutable value in its `.current` property.
