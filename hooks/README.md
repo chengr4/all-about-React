@@ -52,3 +52,4 @@ function TextInputWithFocusButton() {
 2. https://github.com/WebDevSimplified/useful-custom-react-hooks
 3. [Web Dev Simplified; Save Hours Of Work With These 5 Custom React Hooks (2021.9)](https://youtu.be/vrIxu-kfAUo)
 4. [Web Dev Simplified; Learn useRef in 11 Minutes (2020.6)](https://youtu.be/t2ypzz6gJm0)
+5. [黃玄; React without memo (2021.12)](https://youtu.be/lGEMwh32soc)
