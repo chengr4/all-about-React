@@ -1,9 +1,12 @@
 # Notes
 
+## Hooks API Reference
+
 - [x] [useState](#usestate)
 - [ ] [useRef](#useref)
+- [ ] [useCallback](#usecallback)
 
-## useState
+### useState
 
 ```javascript
 const [state, setState] = useState(initialState);
@@ -17,12 +20,12 @@ If the new `state` is computed using the previous `state`, you can pass a functi
 > `initialState` can be provided a function instead
 > 如果你使用與目前 state 相同值來更新 State Hook，React 將會跳過子 component 的 render 及 effect 的執行
 
-## useRef
+### useRef
 
 1. `useRef` is like a “box” that can hold a mutable value in its `.current` property.
 2. `useRef` does not cause the component to re-render when it gets changed (vs. `useState`)
 
-### A Common use case: Click the button to focus `input` tag
+#### A Common use case: Click the button to focus `input` tag
 
 ```javascript
 function TextInputWithFocusButton() {
@@ -40,6 +43,8 @@ function TextInputWithFocusButton() {
   );
 }
 ```
+
+### useCallback
 
 ## References
 
