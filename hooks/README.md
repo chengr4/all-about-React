@@ -44,6 +44,8 @@ function TextInputWithFocusButton() {
 }
 ```
 
+### When to Use
+
 ### useCallback
 
 ## References
