@@ -1,5 +1,9 @@
 # All about React
 
+## Core Ideas
+
+1. We typically want to perform our effects after React has updated the DOM => put side effects into `componentDidMount` and `componentDidUpdate` or `useEffect`.
+
 ## Finished Topics
 
 ### Main Concepts
