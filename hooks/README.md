@@ -1,5 +1,32 @@
 # Notes
 
+- [x] [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
+
+## Using the Effect Hook
+
+> - Similar to `componentDidMount` and `componentDidUpdate`, but effects scheduled with `useEffect` don’t block the browser from updating the screen. This makes your app feel more responsive. The majority of effects **don’t need to happen synchronously**.
+> - The effect cleanup phase happens after every re-render, and not just once during unmounting. This design helps us create components with fewer bugs.
+
+E.g.
+
+```javascript
+// effects require cleanup
+useEffect(() => {
+    function handleStatusChange(status) {
+      setIsOnline(status.isOnline);
+    }
+
+    ChatAPI.subscribeToFriendStatus(props.friend.id, handleStatusChange);
+    return () => {
+      ChatAPI.unsubscribeFromFriendStatus(props.friend.id, handleStatusChange);
+    };
+});
+```
+
+**What does useEffect do? **
+
+By using this Hook, you tell React that your component needs to do something after render. React will remember the function you passed (we’ll refer to it as our “effect”), and call it later after performing the DOM updates.
+
 ## Hooks API Reference
 
 - [x] [useState](#usestate)
