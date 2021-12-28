@@ -6,6 +6,7 @@
 + [Code-Splitting](#code-splitting)
 + [Context](#context)
 + [Refs and the DOM](#refs-and-the-dom)
++ [Uncontrolled Component](#uncontrolled-component)
 
 ## JSX In Depth
 
@@ -231,3 +232,36 @@ class RefDemo extends Component {
 ### References
 
 1. [Codevolution; ReactJS Tutorial - 28 - Refs (2019.01)](https://youtu.be/FXa9mMTKOu8)
+
+## Uncontrolled Component
+
+> In a controlled component, form data is handled by a React component, while in a uncontrolled components, form data is handled by the DOM itself.
+
+E.g.
+
+```javascript
+class NameForm extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.input = React.createRef();
+  }
+
+  handleSubmit(event) {
+    alert('A name was submitted: ' + this.input.current.value);
+    event.preventDefault();
+  }
+
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" ref={this.input} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+    );
+  }
+}
+```
