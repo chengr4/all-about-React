@@ -8,7 +8,7 @@
 
 ### Main Concepts
 
-> GO TO [MAIN CONCEPTs](./main-concept)
+> GO TO [MAIN CONCEPTS](./main-concepts)
 
 - [x] [State and Lifecycle](https://reactjs.org/docs/state-and-lifecycle.html)
 - [x] [Handling Events](https://reactjs.org/docs/handling-events.html)
