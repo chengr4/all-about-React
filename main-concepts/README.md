@@ -176,20 +176,23 @@ ReactDOM.render(
 
 ### Controlled Components
 
-In `HTML`, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input, E.g.
+In `HTML`, form elements such as `<input>`, `<textarea>`, and `<select>` typically maintain their own state and update it based on user input. E.g.
 
 ```HTML
-<input type="text" id="name"/>
-
-<script>
-  const inputName = document.querySelector("#name");
-  inputName.addEventListener("input", e => console.log(e.target.value));
-</script>
+<form>
+  <label>
+    Name:
+    <input type="text" name="name" />
+  </label>
+  <input type="submit" value="Submit" />
+</form>
 ```
 
-透過 input's value ，我們可以知道填入欄位的值為何。
+But in React, mutable state is typically kept in the state property of components, and only updated with `setState()`.
 
-Basic Usage:
+我們可以透過將 React 的 state 變成 "single source of truth" 來將這兩者結合。如此，render form 的 React component 同時也控制了後續 user input 對 form 帶來的改變。An input form element whose value is controlled by React in this way is called a “controlled component”.
+
+E.g. 
 
 ```javascript
 class NameForm extends React.Component {
@@ -215,15 +218,42 @@ class NameForm extends React.Component {
       <form onSubmit={this.handleSubmit}>
         <label>
           Name:
+          {/* value={this.state.value} => "single source of truth" */}
           <input type="text" value={this.state.value} onChange={this.handleChange} />
         </label>
+        {/* input element here will become a button */}
         <input type="submit" value="Submit" />
       </form>
     );
   }
 }
 ```
-Three common tags: `<input>`, `<textarea>`, `<select>`
+
+### The textarea Tag
+
+In HTML, a `<textarea>` element defines its text **by its children:**
+
+```html
+<textarea>
+  Hello there, this is some text in a text area
+</textarea>
+```
+
+在 React 中，`<textarea>` 則是使用一個 value 的 attribute。如此一來，一個使用 `<textarea>` 的 form 可以使用非常類似 `<input>` 方法來寫成：
+
+```javascript
+render() {
+  return (
+    <form onSubmit={this.handleSubmit}>
+      <label>
+        Essay:
+          <textarea value={this.state.value} onChange={this.handleChange} />
+      </label>
+      <input type="submit" value="Submit" />
+    </form>
+  );
+ }
+```
 
 ### Handling Multiple Inputs
 
@@ -283,13 +313,14 @@ When
 2. convering a pre-existing codebase to React
 3. integrating a React application woth a non-React library
 
-check out `uncontrolled components` [2]
+check out `uncontrolled components` [^uc]
 
 ### Related Topics
 
 1. [ES6 computed property name syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#computed_property_names)
-2. [uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html)
-3. [Formik](https://formik.org/)
+2. [Formik](https://formik.org/)
+
+[^uc]: [uncontrolled components](https://reactjs.org/docs/uncontrolled-components.html)
 
 ## Lifting State Up
 
