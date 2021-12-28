@@ -21,6 +21,8 @@
 
 ### Advanced Guides
 
+> GO TO [ADVANCED GUIDES](./advanced-guides)
+
 - [x] [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
 - [ ] [JSX In Depth](https://reactjs.org/docs/jsx-in-depth.html)
 - [x] [Code-Splitting](https://reactjs.org/docs/code-splitting.html)
