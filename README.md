@@ -31,7 +31,7 @@ https://reactjs.org/
 - [ ] [Context](https://reactjs.org/docs/context.html)
 - [ ] [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 - [ ] [Uncontrolled Components](https://reactjs.org/docs/uncontrolled-components.html)
-- [ ] [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
+- [x] [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
 
 ### API Reference
 
