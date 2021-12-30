@@ -47,7 +47,7 @@ If the new `state` is computed using the previous `state`, you can pass a functi
 
 ### useRef
 
-1. `useRef` is like a “box” that can hold a mutable value in its `.current` property.
+1. `useRef` is like a “box” that can hold a mutable value in its `.current` property. 
 2. `useRef` does not cause the component to re-render when it gets changed (vs. `useState`)
 
 #### A Common use case: Click the button to focus `input` tag
@@ -69,7 +69,11 @@ function TextInputWithFocusButton() {
 }
 ```
 
+> `useRef()` 和自建一個 `{current: ...}` object 的唯一不同是，useRef 在每次 render 時都會**給你同一個的 ref object。**
+
 #### When to Use
+
+1. When wanting to save previous value
 
 ### useCallback
 
