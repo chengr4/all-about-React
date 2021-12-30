@@ -28,7 +28,8 @@ By using this Hook, you tell React that your component needs to do something aft
 ## Hooks API Reference
 
 - [x] [useState](#usestate)
-- [ ] [useRef](#useref)
+- [x] [useRef](#useref)
+- [x] [useMemo](#usememo)
 - [ ] [useCallback](#usecallback)
 
 ### useState
@@ -75,6 +76,11 @@ function TextInputWithFocusButton() {
 
 1. When wanting to save previous value
 
+### useMemo
+
+1. useMemo 只會在 dependancy 改變時才重新計算 memoized 的值
+2. 傳到 useMemo 的 function 會在 render 期間執行，所以不要做一些通常不會在 render 期間做的事情。例如，處理 side effect （屬於 useEffect，而不是 useMemo）。
+
 ### useCallback
 
 ## References
@@ -84,3 +90,4 @@ function TextInputWithFocusButton() {
 3. [Web Dev Simplified; Save Hours Of Work With These 5 Custom React Hooks (2021.9)](https://youtu.be/vrIxu-kfAUo)
 4. [Web Dev Simplified; Learn useRef in 11 Minutes (2020.6)](https://youtu.be/t2ypzz6gJm0)
 5. [黃玄; React without memo (2021.12)](https://youtu.be/lGEMwh32soc)
+6. [Web Dev Simplified; Learn useMemo In 10 Minutes (2020.6)](https://youtu.be/THL1OPn72vo)
