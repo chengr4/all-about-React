@@ -41,6 +41,7 @@ https://reactjs.org/
 
 > GO TO [hooks](./hooks)
 
+- [x] [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
 - [ ] [Hooks API Reference](https://reactjs.org/docs/hooks-reference.html)
 
 ## Q and A
