@@ -1,6 +1,8 @@
 # MAIN CONCEPTS
 # Notes
 
+- [Lifting State Up](#lifting-state-up)
+
 ## State and Lifecycle
 
 `lifecycle methods`:
