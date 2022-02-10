@@ -8,6 +8,7 @@
 + [Refs and the DOM](#refs-and-the-dom)
 + [Uncontrolled Component](#uncontrolled-component)
 + [Higher-Order Components](#higher-order-components)
++ [Forwarding Refs](#forwarding-refs)
 
 ## JSX In Depth
 
@@ -266,5 +267,8 @@ class NameForm extends React.Component {
   }
 }
 ```
+
 ## Higher-Order Components
+
+## Forwarding Refs
 
