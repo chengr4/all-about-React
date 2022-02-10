@@ -273,5 +273,33 @@ class NameForm extends React.Component {
 
 ## Refs and the DOM
 
+在某些情況下，想使用 props 以外的方式更改 child component (The child to be modified could be 1. an instance of a React component or 2. it could be a DOM element)
+
+> Version > 16.3: Use `React.createRef()`   
+> Version < 16.3: Use `callback ref`    
+
+### When to Use Refs?
+
+There are a few good use cases for refs:
+
+- Managing focus, text selection (選擇文字), or media playback (播放影音)
+- Triggering imperative animations (觸發即時動畫)
+- Integrating with third-party DOM libraries (E.g. ????)
+
+> Avoid using refs for anything that can be done declaratively.
+> For example, instead of exposing `open()` and `close()` methods on a `Dialog` component, pass an `isOpen` prop to it.
+
+### Accessing Refs
+
+Ref 的值會根據節點的類型而有所不同:
+
+- When the `ref` attribute is used on an **HTML element**, the ref created in the constructor with `React.createRef()` receives the underlying DOM element as its `current` property. (`ref.current` = 此 HTML element)
+
+> React 會在 component mount 的時候將 DOM element 賦值到 `current` 屬性，並在 unmount 時將它清空回 `null`。`ref` 的更新發生在生命週期 `componentDidMount` 或 `componentDidUpdate` 之前
+
+- When the `ref` attribute is used on a custom class component, the `ref` object receives the mounted instance of the component as its `current`. ()
+
+> You may not use the ref attribute on **function components** because they don’t have instances.
+
 ## Forwarding Refs
 
