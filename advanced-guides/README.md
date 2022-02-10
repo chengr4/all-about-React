@@ -303,3 +303,17 @@ Ref 的值會根據節點的類型而有所不同:
 
 ## Forwarding Refs
 
+Forwarding Refs 是一種自動把 `ref` 從一個 component 傳遞到它底下的其中一個 child 的技巧。
+
+```javascript
+const FancyButton = React.forwardRef((props, ref) => (
+  <button ref={ref} className="FancyButton">
+    {props.children}
+  </button>
+));
+
+// You can now get a ref directly to the DOM button:
+const ref = React.createRef();
+<FancyButton ref={ref}>Click me!</FancyButton>;
+```
+
