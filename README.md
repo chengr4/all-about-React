@@ -32,6 +32,7 @@ https://reactjs.org/
 - [ ] [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 - [ ] [Uncontrolled Components](https://reactjs.org/docs/uncontrolled-components.html)
 - [x] [Higher-Order Components](https://reactjs.org/docs/higher-order-components.html)
+- [ ] [Forwarding Refs](https://reactjs.org/docs/forwarding-refs.html)
 
 ### API Reference
 
