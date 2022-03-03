@@ -1,5 +1,9 @@
 # Notes
 
+## Useful hooks
+
+
+
 ## Using the Effect Hook
 
 > - Similar to `componentDidMount` and `componentDidUpdate`, but effects scheduled with `useEffect` don’t block the browser from updating the screen. This makes your app feel more responsive. The majority of effects **don’t need to happen synchronously**.
