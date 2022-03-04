@@ -5,6 +5,7 @@ https://reactjs.org/
 ## Core Ideas
 
 1. We typically want to perform our effects after React has updated the DOM => put side effects into `componentDidMount` and `componentDidUpdate` or `useEffect`.
+2. Props are Read-Only
 
 ## Finished Topics
 
@@ -57,6 +58,13 @@ A:
 
 1. The `state` changes
 2. There comes new `props` [4]
+
+## Unknown Prop Warning
+
+> https://reactjs.org/warnings/unknown-prop.html
+
+1. 當將 `props` 傳輸到 child component 時，應確保不應 forward 打算由 parent component 使用的 `props`
+2. 
 
 ## 未整理 or 未理解
 
