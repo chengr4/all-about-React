@@ -63,8 +63,7 @@ A:
 
 > https://reactjs.org/warnings/unknown-prop.html
 
-1. 當將 `props` 傳輸到 child component 時，應確保不應 forward 打算由 parent component 使用的 `props`
-2. 
+1. 應避免將由 parent component 使用(interpret) 的 `props`，forward 至 child component
 
 ## 未整理 or 未理解
 
