@@ -5,7 +5,6 @@
 + [Typechecking With PropTypes](#typechecking-with-proptypes)
 + [Code-Splitting](#code-splitting)
 + [Context](#context)
-+ [Refs and the DOM](#refs-and-the-dom)
 + [Uncontrolled Component](#uncontrolled-component)
 + [Higher-Order Components](#higher-order-components)
 + [Refs and the DOM](#refs-and-the-dom)
@@ -207,35 +206,6 @@ export default ThemeContextProvider;
 
 1. [The Net Ninja; React Context & Hooks Tutorial (2019.6)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9hNokByJilPg5g9m2APUePI)
 
-## Refs and the DOM
-
-E.g.
-
-```jsx
-// in Class Component
-class RefDemo extends Component {
-  constructor(props) {
-    super(props);
-    this.inputRef = React.createRef()
-  }
-  
-  
-  
-  render() {
-    return (
-      <div>
-        {/* ref points to the input DOM node */}
-        <input type="text" ref={this.inputRef}>
-      </div>
-    )
-  }
-}
-```
-
-### References
-
-1. [Codevolution; ReactJS Tutorial - 28 - Refs (2019.01)](https://youtu.be/FXa9mMTKOu8)
-
 ## Uncontrolled Component
 
 > In a controlled component, form data is handled by a React component, while in a uncontrolled components, form data is handled by the DOM itself.
@@ -273,6 +243,29 @@ class NameForm extends React.Component {
 
 ## Refs and the DOM
 
+E.g.
+
+```jsx
+// in Class Component
+class RefDemo extends Component {
+  constructor(props) {
+    super(props);
+    this.inputRef = React.createRef()
+  }
+  
+  
+  
+  render() {
+    return (
+      <div>
+        {/* ref points to the input DOM node */}
+        <input type="text" ref={this.inputRef}>
+      </div>
+    )
+  }
+}
+```
+
 在某些情況下，想使用 props 以外的方式更改 child component (The child to be modified could be 1. an instance of a React component or 2. it could be a DOM element)
 
 > Version > 16.3: Use `React.createRef()`   
@@ -301,6 +294,10 @@ Ref 的值會根據節點的類型而有所不同:
 
 > You may not use the ref attribute on **function components** because they don’t have instances.
 
+### References
+
+1. [Codevolution; ReactJS Tutorial - 28 - Refs (2019.01)](https://youtu.be/FXa9mMTKOu8)
+
 ## Forwarding Refs
 
 Forwarding Refs 是一種自動把 `ref` 從一個 component 傳遞到它底下的其中一個 child 的技巧。
@@ -316,4 +313,3 @@ const FancyButton = React.forwardRef((props, ref) => (
 const ref = React.createRef();
 <FancyButton ref={ref}>Click me!</FancyButton>;
 ```
-
