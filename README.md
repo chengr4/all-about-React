@@ -74,3 +74,10 @@ A:
 3. [Lifecycle Diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 4. https://github.com/uberVU/react-guide/issues/17#issuecomment-305106051
 5. https://hackmd.io/@JSDC-tw/2021conference/%2FbJrOFuCZQQioW7k6LarlOw
+
+## Jekyll
+
+```
+// Create a new Jekyll site
+jeky new <folder name>
+```
