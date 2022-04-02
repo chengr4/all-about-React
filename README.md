@@ -80,4 +80,7 @@ A:
 ```
 // Create a new Jekyll site
 jeky new <folder name>
+
+// Build the site and make it available on a local server
+bundle exec jekyll serve
 ```
