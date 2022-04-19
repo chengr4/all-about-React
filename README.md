@@ -2,6 +2,12 @@
 
 https://reactjs.org/
 
+- [MAIN CONCEPTS](./main-concepts)
+- [ADVANCED GUIDES](./advanced-guides)
+- [hooks](./hooks)
+- [API REFERENCE](./api-reference)
+- [Testing](./testing)
+
 ## Core Ideas
 
 1. We typically want to perform our effects after React has updated the DOM => put side effects into `componentDidMount` and `componentDidUpdate` or `useEffect`.
