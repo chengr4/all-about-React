@@ -6,7 +6,7 @@ https://reactjs.org/
 - [ADVANCED GUIDES](./advanced-guides)
 - [hooks](./hooks)
 - [API REFERENCE](./api-reference)
-- [Testing](./testing)
+- [React Testing](./react-testing)
 
 ## Core Ideas
 
