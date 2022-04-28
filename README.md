@@ -12,7 +12,7 @@ https://reactjs.org/
 
 1. We typically want to perform our effects after React has updated the DOM => put side effects into `componentDidMount` and `componentDidUpdate` or `useEffect`.
 
-> In stateless component, `return` runs before `useEffect`
+> In stateless component, `return()` runs before `useEffect()`
 
 2. Props are Read-Only
 
