@@ -7,6 +7,7 @@ https://reactjs.org/
 - [hooks](./hooks)
 - [API REFERENCE](./api-reference)
 - [React Testing](./react-testing)
+- [TypeScript with React](https://github.com/chengr4/all-about-TS/tree/main/react)
 
 ## Core Ideas
 
