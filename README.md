@@ -77,6 +77,10 @@ A:
 
 ## 未整理 or 未理解
 
+### Topic to Read
+
+- [為何 useEvent 是個糟糕的方案？](https://medium.com/@anokyy/%E7%82%BA%E4%BD%95useevent%E6%98%AF%E5%80%8B%E7%B3%9F%E7%B3%95%E7%9A%84%E6%96%B9%E6%A1%88-%E6%9B%B4%E5%A5%BD%E7%9A%84%E5%9C%A8%E9%80%99-de7fc2e509e8)
+
 ## References
 
 1. https://reactjs.org/
