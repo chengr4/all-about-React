@@ -312,7 +312,7 @@ class Reservation extends React.Component {
 
 When
 
-1. not wanting to write an event handeler
+1. not wanting to write an event handler
 2. convering a pre-existing codebase to React
 3. integrating a React application woth a non-React library
 
