@@ -1,7 +1,7 @@
 # MAIN CONCEPTS
 # Notes
 
-- [Froms](#forms)
+- [Forms](#forms)
 - [Lifting State Up](#lifting-state-up)
 
 ## State and Lifecycle
